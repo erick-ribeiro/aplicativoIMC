@@ -1,0 +1,96 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Calculo de Indice Corporal'
+  ClientHeight = 372
+  ClientWidth = 713
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object CalendarPicker1: TCalendarPicker
+    Left = 254
+    Top = 8
+    Height = 32
+    CalendarHeaderInfo.DaysOfWeekFont.Charset = DEFAULT_CHARSET
+    CalendarHeaderInfo.DaysOfWeekFont.Color = clWindowText
+    CalendarHeaderInfo.DaysOfWeekFont.Height = -13
+    CalendarHeaderInfo.DaysOfWeekFont.Name = 'Segoe UI'
+    CalendarHeaderInfo.DaysOfWeekFont.Style = []
+    CalendarHeaderInfo.Font.Charset = DEFAULT_CHARSET
+    CalendarHeaderInfo.Font.Color = clWindowText
+    CalendarHeaderInfo.Font.Height = -20
+    CalendarHeaderInfo.Font.Name = 'Segoe UI'
+    CalendarHeaderInfo.Font.Style = []
+    Color = clWindow
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGray
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'select a date'
+  end
+  object CalendarView1: TCalendarView
+    Left = 400
+    Top = 8
+    Width = 305
+    Height = 356
+    Date = 44103.000000000000000000
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    HeaderInfo.DaysOfWeekFont.Charset = DEFAULT_CHARSET
+    HeaderInfo.DaysOfWeekFont.Color = clWindowText
+    HeaderInfo.DaysOfWeekFont.Height = -13
+    HeaderInfo.DaysOfWeekFont.Name = 'Segoe UI'
+    HeaderInfo.DaysOfWeekFont.Style = []
+    HeaderInfo.Font.Charset = DEFAULT_CHARSET
+    HeaderInfo.Font.Color = clWindowText
+    HeaderInfo.Font.Height = -20
+    HeaderInfo.Font.Name = 'Segoe UI'
+    HeaderInfo.Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object DatePicker1: TDatePicker
+    Left = 244
+    Top = 46
+    Date = 44103.000000000000000000
+    DateFormat = 'dd/MM/yyyy'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    TabOrder = 2
+  end
+  object TimePicker1: TTimePicker
+    Left = 244
+    Top = 84
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    TabOrder = 3
+    Time = 44103.650000972220000000
+    TimeFormat = 'hh:mm'
+  end
+  object RelativePanel1: TRelativePanel
+    Left = 88
+    Top = 176
+    Width = 185
+    Height = 41
+    ControlCollection = <>
+    TabOrder = 4
+  end
+end
