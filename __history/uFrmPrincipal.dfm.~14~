@@ -285,13 +285,13 @@ object frmPrincipal: TfrmPrincipal
     Caption = 'btnClear'
     TabOrder = 5
   end
-  object Resultado: TButton
+  object btnResult: TButton
     Left = 203
     Top = 265
     Width = 75
     Height = 25
-    Caption = 'Resultado'
+    Caption = 'btnResult'
     TabOrder = 6
-    OnClick = ResultadoClick
+    OnClick = btnResultClick
   end
 end

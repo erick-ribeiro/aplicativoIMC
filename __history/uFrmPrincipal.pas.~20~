@@ -30,7 +30,7 @@ type
     edtWeight: TEdit;
     cmbGender: TComboBox;
     btnClear: TButton;
-    Resultado: TButton;
+    btnResult: TButton;
     btnHelp: TSpeedButton;
     lblResultHeight: TLabel;
     lblResultWeight: TLabel;
@@ -41,7 +41,7 @@ type
     lblDinamicIMC: TLabel;
     lblResultIMC: TLabel;
     procedure btnHelpClick(Sender: TObject);
-    procedure ResultadoClick(Sender: TObject);
+    procedure btnResultClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,7 +61,7 @@ begin
 end;
 
 
-procedure TfrmPrincipal.ResultadoClick(Sender: TObject);
+procedure TfrmPrincipal.btnResultClick(Sender: TObject);
 begin
   try
     P_Dados_Pessoa.Height := StrToFloat(edtHeight.Text);
@@ -71,7 +71,7 @@ begin
                                       P_Dados_Pessoa.Weight,
                                       P_Dados_Pessoa.Gender);
   except
-    ShowMessage('Dados inv√°lidos!');
+    ShowMessage('Dados inv·lidos!');
   end;
 
   lblDinamicHeight.Caption := FloatToStr(P_Dados_Pessoa.Height);

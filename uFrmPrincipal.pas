@@ -30,7 +30,7 @@ type
     edtWeight: TEdit;
     cmbGender: TComboBox;
     btnClear: TButton;
-    btnResult: TButton;
+    Resultado: TButton;
     btnHelp: TSpeedButton;
     lblResultHeight: TLabel;
     lblResultWeight: TLabel;
@@ -41,7 +41,7 @@ type
     lblDinamicIMC: TLabel;
     lblResultIMC: TLabel;
     procedure btnHelpClick(Sender: TObject);
-    procedure btnResultClick(Sender: TObject);
+    procedure ResultadoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,7 +61,7 @@ begin
 end;
 
 
-procedure TfrmPrincipal.btnResultClick(Sender: TObject);
+procedure TfrmPrincipal.ResultadoClick(Sender: TObject);
 begin
   try
     P_Dados_Pessoa.Height := StrToFloat(edtHeight.Text);
