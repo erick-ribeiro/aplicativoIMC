@@ -2,13 +2,16 @@ program App_IMC;
 
 uses
   Vcl.Forms,
-  uFrmPrincipal in 'uFrmPrincipal.pas' {Form1};
+  uFrmPrincipal in 'uFrmPrincipal.pas' {frmPrincipal},
+  uFrmHelp in 'uFrmHelp.pas' {frmHelp},
+  uDadosPessoa in 'uDadosPessoa.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmHelp, frmHelp);
   Application.Run;
 end.

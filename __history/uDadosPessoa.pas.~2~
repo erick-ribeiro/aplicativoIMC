@@ -1,0 +1,14 @@
+unit uDadosPessoa;
+
+interface
+  type
+    RDados_Pessoa = record
+      Height: Double;
+      Weight: Double;
+      Gender: String;
+      IMC: string;
+  end;
+
+implementation
+
+end.
