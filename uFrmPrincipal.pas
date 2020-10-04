@@ -4,18 +4,10 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.WinXPickers, Vcl.WinXCalendars,
-  Vcl.WinXCtrls, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 
 type
-  TfrmPrincipal = class(TForm)
-    lblAltura: TLabel;
-    lblPeso: TLabel;
-    lblSexo: TLabel;
-    RelativePanel1: TRelativePanel;
-    lblTitle: TLabel;
-    procedure FormShow(Sender: TObject);
-
+  TForm1 = class(TForm)
   private
     { Private declarations }
   public
@@ -23,20 +15,10 @@ type
   end;
 
 var
-  frmPrincipal: TfrmPrincipal;
+  Form1: TForm1;
 
 implementation
 
 {$R *.dfm}
-
-
-
-procedure TfrmPrincipal.FormShow(Sender: TObject);
-begin
-  lblTitle.Caption := 'Calculadora - Índice de Massa Corporal';
-  lblAltura.Caption := 'Sua Altura:';
-  lblPeso.Caption := 'Seu Peso:';
-  lblSexo.Caption:= 'Seu Sexo:';
-end;
 
 end.
